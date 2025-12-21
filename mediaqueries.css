@@ -18,7 +18,11 @@
         display: flex;
     }
 
-    #experience, .experience-details-container{
+    #skills, .skill-details-container{
+        margin-top: 2rem;
+    }
+
+    #certifications {
         margin-top: 2rem;
     }
 
@@ -38,7 +42,7 @@
         margin: 0 5%;
     }
 
-    .section__pic_container{
+    .section__pic-container{
         width: 275px;
         height: 275px;
         margin: 0 auto 2rem;
@@ -81,7 +85,7 @@
         font-size: 1rem;
     }
 
-    .experience-sub-title{
+    .skill-sub-title{
         font-size: 1.25rem;
     }
 
@@ -112,5 +116,14 @@
 
     .text-container{
         text-align: justify;
+    }
+
+    .certification-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .certification-card {
+        height: 300px;
     }
 }

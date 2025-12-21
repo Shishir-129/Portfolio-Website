@@ -224,7 +224,8 @@ section {
     font-weight: 600;
     transition: all 0.3s ease;
     padding: 1rem;
-    width: 8rem;
+    width: auto;
+    min-width: 8rem;
     border-radius: 2rem;
     cursor: pointer;
 }
@@ -295,20 +296,20 @@ section {
     margin: auto 0;
 }
 
-/* EXPERIENCE SECTION */
+/* SKILLS SECTION */
 
-#experience{
+#skills{
     position: relative;
 }
 
-.experience-sub-title{
+.skill-sub-title{
     color:rgb(85,85,85);
     font-weight: 600;
     font-size: 1.75rem;
     margin-bottom: 2rem;
 }
 
-.experience-details-container{
+.skill-details-container{
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -339,6 +340,13 @@ article{
 .color-container {
     border-color: rgb(163,163,163);
     background: rgb(250,250,250);
+    transition: all 0.3s ease;
+}
+
+.color-container:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    border-color: rgb(53,53,53);
 }
 
 .project-img{
@@ -347,9 +355,33 @@ article{
     height: 90%;
 }
 
+.project-description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 200px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+
+.project-description p {
+    text-align: center;
+    line-height: 1.6;
+    color: rgb(85,85,85);
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
 .project-title {
     margin: 1rem;
     color: black;
+    transition: all 0.3s ease;
+}
+
+.color-container:hover .project-title {
+    color: rgb(53,53,53);
+    font-weight: 700;
 }
 
 .project-btn {
@@ -394,6 +426,113 @@ article{
 
 .email-icon{
     height: 2.5rem;
+}
+
+/* SKILLS + ABOUT: card hover */
+#skills .details-container,
+#about .details-container {
+    transition: all 0.3s ease;
+}
+
+#skills .details-container:hover,
+#about .details-container:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+    border-color: rgb(53,53,53);
+}
+
+/* CONTACT: item hover */
+.contact-info-upper-container {
+    transition: box-shadow 0.3s ease;
+}
+
+.contact-info-upper-container:hover {
+    box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+}
+
+.contact-info-container {
+    transition: all 0.3s ease;
+    border-radius: 1rem;
+}
+
+.contact-info-container:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.12);
+    background: rgb(250,250,250);
+    border-color: rgb(53,53,53);
+}
+
+/* CERTIFICATIONS SECTION */
+
+#certifications {
+    position: relative;
+}
+
+.certification-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.certification-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin: 2rem auto;
+    max-width: 900px;
+    width: 100%;
+}
+
+.certification-card {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    border-radius: 1rem;
+    overflow: hidden;
+    background: white;
+    border: 1.6px solid rgb(163,163,163);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    height: 350px;
+}
+
+.certification-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.certification-img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    flex-grow: 1;
+}
+
+.certification-name {
+    padding: 1rem;
+    text-align: center;
+    font-weight: 600;
+    color: black;
+    background: white;
+    border-top: 1px solid rgb(163,163,163);
+    margin: 0;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.certification-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    border-color: rgb(53,53,53);
+}
+
+.certification-card:hover .certification-name {
+    color: rgb(53,53,53);
+    font-weight: 700;
 }
 
 /* FOOTER */
