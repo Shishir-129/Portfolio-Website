@@ -317,20 +317,43 @@ section {
     flex-direction: column;
 }
 
+.details-container-skills {
+    padding: 1.5rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border: 1.6px solid rgb(163,163,163);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.details-container-skills:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+    border-color: rgb(53,53,53);
+}
+
 .article-container{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
     text-align: initial;
-    flex-wrap: wrap; /* flexible when increase/decrease width */
-    flex-direction: row;
-    gap: 2.5rem;
-    justify-content: space-around;
+    padding: 1rem;
 }
 
 article{
     display: flex;
-    width: 10rem;
-    justify-content: space-around;
+    align-items: center;
     gap: 0.5rem;
+}
+
+article .icon {
+    flex-shrink: 0;
+}
+
+article div h3 {
+    font-size: 1rem;
+    font-weight: 700;
 }
 
 /* PROJECTS SECTION */
@@ -542,23 +565,27 @@ article{
 footer{
     margin: 4rem 0 0;
     padding: 2.5rem 0 2rem;
-    background: #1f2b3a;
+    background: #1f2b3a !important;
     color: #e8edf2;
     border-top: 1px solid rgba(255,255,255,0.08);
+    width: 100%;
+    box-sizing: border-box;
 }
 
 footer nav{
     height: auto;
     justify-content: center;
     padding: 0 1.5rem;
+    background: #1f2b3a !important;
 }
 
 footer .nav-links-container{
     width: 100%;
     display: flex;
     justify-content: center;
-    border-bottom: 1px solid rgba(255,255,255,0.08);
+    border-bottom: 2.5px solid rgba(255,255,255,0.08);
     padding-bottom: 1.5rem;
+    background: #1f2b3a !important;
 }
 
 footer .nav-links{
@@ -579,6 +606,7 @@ footer .nav-links a:hover{
 footer p{
     text-align: center;
     margin-top: 1.5rem;
-    color: #e8edf2;
+    color: #e8edf2 !important;
     font-weight: 500;
+    background: #1f2b3a !important;
 }
