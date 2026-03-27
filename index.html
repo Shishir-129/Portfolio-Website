@@ -269,28 +269,34 @@
         <h1 class="title">Certifications</h1>
         <div class="certification-container">
             <div class="certification-grid">
-                <div class="certification-card">
+                <div class="certification-card" onclick="openModal('./assets/Associate Data-Scientist.png')">
                     <div class="certification-content">
                         <img src="./assets/Associate Data-Scientist.png" alt="Certificate 1" class="certification-img"/>
                         <p class="certification-name">Associate Data Scientist</p>
                     </div>
                 </div>
-                <div class="certification-card">
+                <div class="certification-card" onclick="openModal('./assets/Data Analyst in Py.png')">
                     <div class="certification-content">
                         <img src="./assets/Data Analyst in Py.png" alt="Certificate 2" class="certification-img"/>
                         <p class="certification-name">Data Analyst in Python</p>
                     </div>
                 </div>
-                <div class="certification-card">
+                <div class="certification-card" onclick="openModal('./assets/ML-Workshop.jpg')">
                     <div class="certification-content">
                         <img src="./assets/ML-Workshop.jpg" alt="Certificate 3" class="certification-img"/>
                         <p class="certification-name">ML Workshop</p>
                     </div>
                 </div>
-                <div class="certification-card">
+                <div class="certification-card" onclick="openModal('./assets/Software Fellowship.jpg')">
                     <div class="certification-content">
                         <img src="./assets/Software Fellowship.jpg" alt="Certificate 4" class="certification-img" />
                         <p class="certification-name">Software Fellowship</p>
+                    </div>
+                </div>
+                <div class="certification-card" onclick="openModal('./assets/Hackathon-Certi.jpg')">
+                    <div class="certification-content">
+                        <img src="./assets/Hackathon-Certi.jpg" alt="Certificate 5" class="certification-img" />
+                        <p class="certification-name">Hackathon's Acknowledgment</p>
                     </div>
                 </div>
             </div>
@@ -339,6 +345,14 @@
         </nav>
         <p>Copyright &#169; 2025 Shishir Neupane Sharma. All Rights Reserved.</p>
     </footer>
+
+    <!-- Modal for full image view -->
+    <div id="imageModal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">&times;</button>
+            <img id="modalImage" src="" alt="Full Certificate View"/>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
