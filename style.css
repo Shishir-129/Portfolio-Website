@@ -57,6 +57,12 @@ a:hover{
     text-decoration-color: rgba(181,181,181); /* color of the underline */
 }
 
+.logo-name{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
 .logo{
     font-size: 1.8rem;
     font-weight: 600;
@@ -65,6 +71,11 @@ a:hover{
 
 .logo:hover{
     cursor: default;
+}
+
+.logo.top {
+    border-radius: 50%;
+    height: 2.5rem;
 }
 
 /* HAMBURGER MENU */
