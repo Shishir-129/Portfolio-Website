@@ -10,6 +10,7 @@
 
 body{
     font-family: "Poppins", sans-serif;
+    background: #f8f6f3;
 }
 
 html{
@@ -57,8 +58,9 @@ a:hover{
 }
 
 .logo{
-    font-size: 1.7rem;
+    font-size: 1.8rem;
     font-weight: 600;
+    color: #645951;
 }
 
 .logo:hover{
@@ -218,6 +220,11 @@ section {
 .icon {
     cursor: pointer;
     height: 2rem;
+}
+
+.icon.top:hover {
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px #e8a648;
 }
 
 /* BUTTONS */
@@ -728,7 +735,7 @@ footer .nav-links a{
 }
 
 footer .nav-links a:hover{
-    color: #ffffff;
+    color: #c98757;
     text-decoration: none;
 }
 
