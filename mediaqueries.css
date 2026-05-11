@@ -54,6 +54,41 @@
   .about-containers {
     margin-top: 0;
   }
+
+  #projects .details-container {
+    flex: 0 0 350px;
+  }
+
+  #projects .about-containers {
+    width: 100%;
+    flex-wrap: wrap;
+    overflow-x: visible;
+  }
+
+  #projects .experience-details-container {
+    overflow-x: visible;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #projects .details-container {
+    flex: 0 0 280px;
+  }
+
+  .project-image-section {
+    flex: 0 0 200px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #projects .details-container {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .project-image-section {
+    flex: 0 0 200px;
+  }
 }
 
 @media screen and (max-width: 600px) {
